@@ -1,7 +1,7 @@
 # Internal: Default configuration for terraform
 
 class terraform::params {
-  $version = '0.1.0'
+  $version = '0.4.2'
 
   $_real_kernel = downcase($::kernel)
   $_real_arch   = $::architecture ? {
