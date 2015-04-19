@@ -17,7 +17,7 @@ class terraform(
   case $ensure {
     present: {
       # get the download URI
-      $download_uri = "http://dl.bintray.com/mitchellh/terraform/${version}_${terraform::params::_real_platform}.zip?direct"
+      $download_uri = "http://dl.bintray.com/mitchellh/terraform/terraform_${version}_${terraform::params::_real_platform}.zip?direct"
 
       # the dir inside the zipball uses the major version number segment
       $major_version = split($version, '[.]')
