@@ -27,7 +27,7 @@ class terraform(
         # blow away any previous attempts
         "rm -rf /tmp/terraform* /tmp/${extracted_dirname}",
         # download the zip to tmp
-        "curl - L ${download_uri} > /tmp/terraform-v${version}.zip",
+        "curl -L ${download_uri} > /tmp/terraform-v${version}.zip",
         # extract the zip to tmp spot
         'mkdir /tmp/terraform',
         "unzip -o /tmp/terraform-v${version}.zip -d /tmp/terraform",
