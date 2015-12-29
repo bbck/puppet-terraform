@@ -15,7 +15,7 @@ describe "terraform" do
       [
         "rm -rf /tmp/terraform* /tmp/0",
         # download the zip to tmp
-        "curl http://dl.bintray.com/mitchellh/terraform/0.9.9_darwin_amd64.zip?direct > /tmp/terraform-v0.9.9.zip",
+        "curl https://releases.hashicorp.com/terraform/0.9.9/terraform_0.9.9_darwin_amd64.zip > /tmp/terraform-v0.9.9.zip",
         # extract the zip to tmp spot
         "mkdir /tmp/terraform",
         "unzip -o /tmp/terraform-v0.9.9.zip -d /tmp/terraform",
